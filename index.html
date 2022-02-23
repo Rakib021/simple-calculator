@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="container">
+       <table>
+           <tr>
+               <td colspan="4"><input type="text" id="myResult"></td>
+           </tr>
+           <tr>
+               <td><input type="button" value="C" onclick="deleteMe()"></td>
+               <td><input type="button" value="(" onclick="showCalculator('(')"></td>
+               <td><input type="button" value=")" onclick="showCalculator(')')"></td>
+           </tr>
+           <tr>
+            <td><input type="button" value="7" onclick="showCalculator('7')"></td>
+            <td><input type="button" value="8" onclick="showCalculator('8')"></td>
+            <td><input type="button" value="9" onclick="showCalculator('9')"></td>
+            <td><input type="button" value="+" onclick="showCalculator('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="showCalculator('4')"></td>
+            <td><input type="button" value="5" onclick="showCalculator('5')"></td>
+            <td><input type="button" value="6" onclick="showCalculator('6')"></td>
+            <td><input type="button" value="-" onclick="showCalculator('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="3" onclick="showCalculator('3')"></td>
+            <td><input type="button" value="2" onclick="showCalculator('2')"></td>
+            <td><input type="button" value="1" onclick="showCalculator('1')"></td>
+            <td><input type="button" value="X" onclick="showCalculator('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="showCalculator('0')"></td>
+            <td><input type="button" value="." onclick="showCalculator('.')"></td>
+            <td><input type="button" value="/" onclick="showCalculator('/')"></td>
+            <td><input type="button" value="=" onclick="result('=')"></td>
+        </tr>
+       </table>
+      </div>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
